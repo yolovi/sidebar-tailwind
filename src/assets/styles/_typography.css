@@ -1,0 +1,100 @@
+@import './_fonts.css';
+
+/* Definir variables CSS globales opcionales usando tokens */
+:root {
+    --font-base: 'Helvetica Neue', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 30px;
+    --font-size-4xl: 36px;
+    --font-size-5xl: 48px;
+    --font-size-6xl: 60px;
+    --font-size-7xl: 72px;
+    --font-size-8xl: 96px;
+
+    --line-height-tight: 120%;
+}
+
+/* Ejemplo de clases utilitarias */
+.font-regular {
+    font-family: var(--font-base);
+    font-weight: var(--font-weight-regular);
+}
+
+.font-medium {
+    font-family: var(--font-base);
+    font-weight: var(--font-weight-medium);
+}
+
+.font-bold {
+    font-family: var(--font-base);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-xs {
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-tight);
+}
+
+.text-sm {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-tight);
+}
+
+.text-base {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-tight);
+}
+
+.text-lg {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-tight);
+}
+
+.text-xl {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-tight);
+}
+
+.text-2xl {
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-tight);
+}
+
+.text-3xl {
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-tight);
+}
+
+.text-4xl {
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-tight);
+}
+
+.text-5xl {
+    font-size: var(--font-size-5xl);
+    line-height: var(--line-height-tight);
+}
+
+.text-6xl {
+    font-size: var(--font-size-6xl);
+    line-height: var(--line-height-tight);
+}
+
+.text-7xl {
+    font-size: var(--font-size-7xl);
+    line-height: var(--line-height-tight);
+}
+
+.text-8xl {
+    font-size: var(--font-size-8xl);
+    line-height: var(--line-height-tight);
+}

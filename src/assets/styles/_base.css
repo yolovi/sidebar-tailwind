@@ -1,0 +1,17 @@
+@import './_tokens.css';
+
+
+html {
+    font-family: var(--token-font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: inherit;
+    /* hereda de html */
+    font-size: var(--font-size-base, 16px);
+    color: var(--token-color-text, #111);
+    background: var(--token-color-bg, #fff);
+}
