@@ -11,7 +11,7 @@ import React, { useState } from "react";
 // Los componentes de página no necesitan cambios, ya que no usan el estado de Redux directamente.
 const HomePage = () => (
   <div className="p-8">
-    <h2 className="text-mint-500 text-4xl font-bold">Inicio</h2>
+    <h2 className="ds-text-title">Inicio</h2>
   </div>
 );
 
@@ -211,7 +211,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar, setPage }) => {
         <div className="px-4 pb-4">
           <button
             onClick={handleLogout}
-            className="flex w-full items-center rounded-lg p-3 text-sm font-medium text-gray-300 transition-colors hover:bg-ds-primary-600"
+            className="hover:bg-ds-primary-600 flex w-full items-center rounded-lg p-3 text-sm font-medium text-gray-300 transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

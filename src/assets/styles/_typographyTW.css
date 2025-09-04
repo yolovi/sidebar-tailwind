@@ -1,0 +1,9 @@
+@layer components {
+  .ds-text-title {
+    @apply text-mint-500 text-4xl leading-tight font-bold;
+  }
+
+  .text-subtitle {
+    @apply text-lg leading-snug font-medium text-gray-600;
+  }
+}
