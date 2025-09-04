@@ -1,8 +1,9 @@
-@import './_fonts.css';
+/* @import './_fonts.css'; */
 
 /* Definir variables CSS globales opcionales usando tokens */
 :root {
-    --font-base: 'Helvetica Neue', sans-serif;
+    --font-base: sans-serif;
+    
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;

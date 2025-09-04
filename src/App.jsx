@@ -11,7 +11,7 @@ import React, { useState } from "react";
 // Los componentes de página no necesitan cambios, ya que no usan el estado de Redux directamente.
 const HomePage = () => (
   <div className="p-8">
-    <h2 className="text-4xl font-bold text-gray-800">Inicio</h2>
+    <h2 className="text-mint-500 text-4xl font-bold">Inicio</h2>
   </div>
 );
 
@@ -66,13 +66,13 @@ const Sidebar = ({ isCollapsed, toggleSidebar, setPage }) => {
 
   return (
     <aside
-      className={`relative h-screen bg-gray-900 text-white transition-all duration-300 ease-in-out flex flex-col ${sidebarWidth}`}
+      className={`relative flex h-screen flex-col bg-gray-900 text-white transition-all duration-300 ease-in-out ${sidebarWidth}`}
     >
-      <div className="flex-shrink-0 flex items-center justify-between h-16 px-4">
+      <div className="flex h-16 flex-shrink-0 items-center justify-between px-4">
         <div className="flex items-center space-x-2">
           {/* Logo o nombre de la app */}
           <span
-            className={`text-xl font-bold transition-opacity ${
+            className={`text-mint-500 text-xl font-bold transition-opacity ${
               isCollapsed ? "opacity-0" : "opacity-100"
             }`}
           >
@@ -81,7 +81,8 @@ const Sidebar = ({ isCollapsed, toggleSidebar, setPage }) => {
         </div>
         <button
           onClick={toggleSidebar}
-          className="p-2 rounded-full hover:bg-gray-700 focus:outline-none"
+          // className="p-2 rounded-full hover:bg-var(--color-accent-800) focus:outline-none"
+          className="hover:bg-mint-500 rounded-full p-2 focus:outline-none"
         >
           {/* Icono de colapsar/expandir */}
           {isCollapsed ? (
@@ -118,13 +119,13 @@ const Sidebar = ({ isCollapsed, toggleSidebar, setPage }) => {
         </button>
       </div>
 
-      <nav className="mt-4 flex-grow flex flex-col justify-between">
+      <nav className="mt-4 flex flex-grow flex-col justify-between">
         <ul className="space-y-2">
           {/* Enlaces de navegación */}
           <li>
             <button
               onClick={() => handleLinkClick("/")}
-              className="w-full flex items-center p-3 text-sm font-medium text-gray-300 rounded-lg hover:bg-gray-700 transition-colors"
+              className="flex w-full items-center rounded-lg p-3 text-sm font-medium text-gray-300 transition-colors hover:bg-gray-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +142,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar, setPage }) => {
                 />
               </svg>
               <span
-                className={`ml-3 transition-opacity duration-300 ${
+                className={`text-ds-primary-600 ml-3 transition-opacity duration-300 ${
                   isCollapsed ? "opacity-0" : "opacity-100"
                 }`}
               >
@@ -152,7 +153,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar, setPage }) => {
           <li>
             <button
               onClick={() => handleLinkClick("/clients")}
-              className="w-full flex items-center p-3 text-sm font-medium text-gray-300 rounded-lg hover:bg-gray-700 transition-colors"
+              className="flex w-full items-center rounded-lg p-3 text-sm font-medium text-gray-300 transition-colors hover:bg-gray-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +181,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar, setPage }) => {
           <li>
             <button
               onClick={() => handleLinkClick("/documents")}
-              className="w-full flex items-center p-3 text-sm font-medium text-gray-300 rounded-lg hover:bg-gray-700 transition-colors"
+              className="flex w-full items-center rounded-lg p-3 text-sm font-medium text-gray-300 transition-colors hover:bg-gray-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +211,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar, setPage }) => {
         <div className="px-4 pb-4">
           <button
             onClick={handleLogout}
-            className="w-full flex items-center p-3 text-sm font-medium text-gray-300 rounded-lg hover:bg-gray-700 transition-colors"
+            className="flex w-full items-center rounded-lg p-3 text-sm font-medium text-gray-300 transition-colors hover:bg-ds-primary-600"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +268,7 @@ export const App = () => {
   };
 
   return (
-    <div className="font-sans flex antialiased">
+    <div className="flex font-sans antialiased">
       <Sidebar
         isCollapsed={isCollapsed}
         toggleSidebar={toggleSidebar}
